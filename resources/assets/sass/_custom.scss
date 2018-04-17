@@ -1,3 +1,42 @@
-// body{
-//     background: blue;
-// }
+$bg-color: #0b1a31;
+$font-color: #fff;
+
+body {
+    letter-spacing: 2px;
+}
+
+.navbar {
+    background-color: $bg-color;
+}
+
+.jumbotron, .jumbotron h1 {
+    background-color: #f5f8fa;
+    font-size: 2em;
+    font: $font-color;
+}
+
+.list-group-item, .well {
+    color: $font-color;
+    background-color: $bg-color;
+    transition: transform 400ms;
+}
+
+.well:hover {
+    transform: scale(1.07);
+}
+.btn {
+    color: $font-color;
+    background-color: $bg-color;
+    border-color: $bg-color;
+    margin: 2px;
+}
+
+.btn:hover, .btn:focus {
+    color: $font-color !important;
+    background-color: #020508 !important;
+    border-color: #020508 !important;
+}
+
+a {
+    color: $font-color;
+}
