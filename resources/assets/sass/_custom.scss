@@ -2,27 +2,13 @@ $bg-color: #0b1a31;
 $font-color: #fff;
 
 body {
+    margin: 0;
+    height: 100vh;
     letter-spacing: 2px;
 }
 
 .navbar {
     background-color: $bg-color;
-}
-
-.jumbotron, .jumbotron h1 {
-    background-color: #f5f8fa;
-    font-size: 2em;
-    font: $font-color;
-}
-
-.list-group-item, .well {
-    color: $font-color;
-    background-color: $bg-color;
-    transition: transform 400ms;
-}
-
-.well:hover {
-    transform: scale(1.07);
 }
 .btn {
     color: $font-color;
@@ -38,5 +24,149 @@ body {
 }
 
 a {
-    color: $font-color;
+    color: $bg-color;
 }
+
+$dk-blue: #1E83AE;
+$blue: #3D5B94;
+$light-blue: #3DACDD;
+$green: #6dcd9a;
+$social-size: 1.2em;
+$social-width: 20%;
+
+* {
+  margin: 0;
+  padding: 0;
+  @include box-sizing(border-box);
+}
+
+footer {
+  width: 100%;
+  display: inline-block;
+  margin-top:  10px;
+  height: 70px;
+  background-color: #454545;
+  .copyright {
+    width: 50%;
+    float: left;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+    p {
+      padding-left: 10%;
+      color: white;
+      font-size: 0.7em;
+      line-height: 70px;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      @media (max-width: 600px) {
+        text-align: center;
+        padding: 0;
+      }
+    }
+  }
+  .social {
+      width: 50%;
+      float: right;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+     a {
+      float: left;
+      line-height: 70px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-weight: bold; 
+      @include transition(all, 0.3s);
+       &:hover {
+         background-color: #222;
+         @include transition(all, .3s);
+       }
+    }
+  }
+}
+
+.linked {
+  background-color: $dk-blue;
+  font-size: $social-size;
+  width: $social-width;
+}
+
+.face {
+  background-color: $blue;
+  font-size: $social-size;
+  width: $social-width;
+}
+
+.tweet {
+  background-color: $light-blue;
+  font-size: $social-size;
+  width: $social-width;
+}
+
+.support {
+  background-color: $green;
+  font-size: 0.8em;
+  width: 40%;
+}
+
+// index page
+.bg-image {
+    height: 95vh;
+    background: url('/storage/cover_images/office.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.671);
+    font-size: 2em;
+    font: $font-color;
+}
+
+.index-content {
+    padding: 1em;
+    background: rgba(0,0,0,0.8);
+    h1 {
+        color: $font-color;
+    }
+    p {
+        color: #489E6B;
+    }
+}
+
+// about page
+.abt-image {
+    height: 95vh;
+    background: url('/storage/cover_images/company_office.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about-content {
+    padding: 1em;
+    background: rgba(0,0,0,0.8);
+    h1 {
+        text-align: center;
+        color: $font-color;
+    }
+    h3 {
+        color: #489E6B;
+    }
+    p {
+        color: $font-color;
+    }
+}
+
+
+// blog page
+.list-group-item, .well {
+    color: $bg-color;
+    background-color: $font-color;
+    transition: transform 400ms;
+}
+
+.well:hover {
+    transform: scale(1.03);
+}
+
