@@ -5,6 +5,7 @@ body {
     margin: 0;
     height: 100vh;
     letter-spacing: 2px;
+    background-color: #fff;
 }
 
 .navbar {
@@ -127,7 +128,7 @@ footer {
 
 .index-content {
     padding: 1em;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.85);
     h1 {
         color: $font-color;
     }
@@ -145,7 +146,8 @@ footer {
 }
 .about-content {
     padding: 1em;
-    background: rgba(0,0,0,0.8);
+    // background: rgba(0,0,0,0.85);
+    background: rgba(0, 0, 0, 0.45);
     h1 {
         text-align: center;
         color: $font-color;
@@ -153,13 +155,19 @@ footer {
     h3 {
         color: #489E6B;
     }
-    p {
+    h4 {
         color: $font-color;
     }
 }
 
 
 // blog page
+.post-header {
+    background: rgba(0,0,0,0.85);
+    color: $font-color;
+    text-align: center;
+
+}
 .list-group-item, .well {
     color: $bg-color;
     background-color: $font-color;

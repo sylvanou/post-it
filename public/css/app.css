@@ -8354,6 +8354,7 @@ body {
   margin: 0;
   height: 100vh;
   letter-spacing: 2px;
+  background-color: #fff;
 }
 
 .navbar {
@@ -8487,7 +8488,7 @@ footer .social a:hover {
 
 .index-content {
   padding: 1em;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.85);
 }
 
 .index-content h1 {
@@ -8507,7 +8508,7 @@ footer .social a:hover {
 
 .about-content {
   padding: 1em;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .about-content h1 {
@@ -8519,8 +8520,14 @@ footer .social a:hover {
   color: #489E6B;
 }
 
-.about-content p {
+.about-content h4 {
   color: #fff;
+}
+
+.post-header {
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  text-align: center;
 }
 
 .list-group-item,
